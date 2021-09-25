@@ -5,7 +5,7 @@ const {joinVoiceChannel, getVoiceConnection, AudioPlayer, createAudioPlayer, Voi
 
 module.exports = {
     name: 'play', 
-    description: 'Joins and plays a video from youtube',
+    description: 'Joins and plays a video from youtube (search by title/keywords)',
     async execute(message, args) {
         const voiceChannel = message.member.voice.channel;
  

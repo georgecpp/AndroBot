@@ -50,6 +50,9 @@ client.on('messageCreate', async (msg) => {
     else if(command === 'leave') {
         client.commands.get('leave').execute(msg, args);
     }
+    else if(command === 'help') {
+        client.commands.get('help').execute(msg, args);
+    }
 });
 
 

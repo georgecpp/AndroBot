@@ -2,7 +2,7 @@ const Reddit = require("@cxllm/reddit");
 const {random, top, rising, newPost} = require("@cxllm/reddit") //in this context, "newPost" must be used as new collides with the constructor
 module.exports = {
     name: 'meme',
-    description: 'fetches random meme from reddit!',
+    description: 'Fetches random meme from reddit!',
     execute(message, args) {
         message.channel.send('Here\'s your meme:');
         const sub = "memes"; //you can also use r/memes as it slices it in the function
