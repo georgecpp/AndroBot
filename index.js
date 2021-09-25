@@ -8,7 +8,8 @@ const client = new Client({
     intents:
     [
         Intents.FLAGS.GUILDS,
-        Intents.FLAGS.GUILD_MESSAGES
+        Intents.FLAGS.GUILD_MESSAGES,
+        Intents.FLAGS.GUILD_VOICE_STATES
     ]
 });
 
@@ -42,6 +43,12 @@ client.on('messageCreate', async (msg) => {
     }
     else if(command === 'stopwater') {
         client.commands.get('stopwater').execute(msg, args);
+    }
+    else if(command === 'play') {
+        client.commands.get('play').execute(msg,args);
+    }
+    else if(command === 'leave') {
+        client.commands.get('leave').execute(msg, args);
     }
 });
 

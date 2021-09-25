@@ -12,12 +12,14 @@
   "dependencies": {
     "@cxllm/reddit": "^1.0.1-10",
     "@discordjs/opus": "^0.6.0",
+    "@discordjs/voice": "^0.6.0",
     "axios": "^0.21.4",
     "dankmemer-wrapper": "^2.0.0",
     "discord.js": "^13.1.0",
     "dotenv": "^10.0.0",
     "ffmpeg-static": "^4.4.0",
     "imageapi.js": "^1.7.0",
+    "libsodium-wrappers": "^0.7.9",
     "yt-search": "^2.10.1",
     "ytdl-core": "^4.9.1"
   }
