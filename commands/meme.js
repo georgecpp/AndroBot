@@ -5,7 +5,7 @@ module.exports = {
     description: 'Fetches random meme from reddit!',
     execute(message, args) {
         message.channel.send('Here\'s your meme:');
-        const sub = "memes"; //you can also use r/memes as it slices it in the function
+        const sub = "dankmemes"; //you can also use r/memes as it slices it in the function
         (async () => {
             try {
                 const img = await (await Reddit.random(sub)).image;
